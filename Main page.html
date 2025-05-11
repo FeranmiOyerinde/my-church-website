@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The New Evangelism Ministry Anniversary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #e0f7fa, #e8eaf6);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 150px;
+      height: 150px;
+      background: #2b6cb0;
+      opacity: 0.1;
+      border-radius: 50%;
+    }
+
+    .logo {
+      max-width: 120px;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #2d3748;
+    }
+
+    .highlight {
+      color: #2b6cb0;
+      font-weight: bold;
+    }
+
+    p {
+      color: #4a5568;
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .download-button {
+      background: linear-gradient(45deg, #3182ce, #63b3ed);
+      color: white;
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 5px 15px rgba(49, 130, 206, 0.3);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .download-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(49, 130, 206, 0.4);
+    }
+
+    .countdown {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #e53e3e;
+      margin: 1.5rem 0;
+    }
+
+    .slideshow {
+      width: 100%;
+      max-height: 250px;
+      margin-bottom: 2rem;
+    }
+
+    .slideshow img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      animation: fade 1s ease-in-out;
+    }
+
+    @keyframes fade {
+      from { opacity: 0.4; }
+      to { opacity: 1; }
+    }
+
+    .social-links {
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #3182ce;
+      transition: transform 0.2s;
+    }
+
+    .social-links a:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.875rem;
+      color: #718096;
+    }
+
+    /* Map container for responsiveness */
+    .map-container {
+      width: 100%;
+      height: 400px; /* Adjust this height to your preference */
+      max-width: 800px;
+      margin-top: 2rem;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="images/youtube new.png" alt="Church Logo" class="logo">
+    <div class="slideshow">
+      <img id="slide" src="https://source.unsplash.com/800x250/?church,people" alt="Slideshow">
+    </div>
+    <h1><span class="highlight">You're Invited!</span></h1>
+    <p>Celebrate the grace of God with us at <strong>The New Evangelism Ministry</strong>'s Anniversary.<br>
+      Download your <em>programme guide</em> below and be part of the glorious move!</p>
+    <div class="countdown" id="countdown">Loading countdown...</div>
+    <a href="https://drive.google.com/file/d/1mJJgKoAW2TpLmQyS63Nfk7BKUY4tykBW/view?usp=sharing" target="_blank" class="download-button">📥 Download Programme Guide</a>
+
+    
+    <!-- Embedded Map Section -->
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4732.644895889075!2d3.282652675705027!3d6.5652055226758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b851bb3344cfb%3A0xdd7feb195c2b8702!2sThe%20New%20Evangelism%20Ministry!5e1!3m2!1sen!2sus!4v1746935043068!5m2!1sen!2sus" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="social-links">
+      <a href="https://web.facebook.com/TheNewEvangelism/?_rdc=1&_rdr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.youtube.com/@thenewevangelismministry" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://www.instagram.com/tnem_international/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <footer>
+      <p>&copy; 2025 The New Evangelism Ministry. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script>
+    // Countdown Timer
+    const countdown = document.getElementById("countdown");
+    const eventDate = new Date("2025-05-11T10:00:00").getTime();
+    setInterval(() => {
+      const now = new Date().getTime();
+      const distance = eventDate - now;
+
+      if (distance < 0) {
+        countdown.innerHTML = "🎉 The event is live!";
+        return;
+      }
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      countdown.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s to go`;
+    }, 1000);
+
+    // Slideshow
+    const images = [
+        "images/DSC_1820.jpg",
+        "images/DSC_1821.jpg",
+        "images/DSC_1952.jpg",
+        "images/DSC_1972.jpg",
+        "images/DSC_3454.jpg",
+        "images/DSC_3571.jpg",
+        "images/DSC_3803.jpg",
+        "images/DSC_3975.jpg"
+    ];
+    let current = 0;
+    const slide = document.getElementById("slide");
+    setInterval(() => {
+      current = (current + 1) % images.length;
+      slide.src = images[current];
+    }, 4000);
+  </script>
+</body>
+
+</html>
